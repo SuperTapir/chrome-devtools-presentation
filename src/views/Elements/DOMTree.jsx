@@ -7,7 +7,7 @@ export default function Home() {
       <h1>Elements Panel</h1>
       <h2>DOM Tree</h2>
 
-      <Link to="StylesConfig"><button>Next</button></Link>
+      <Link to="/1"><button>Next</button></Link>
     </div>
   );
 }
