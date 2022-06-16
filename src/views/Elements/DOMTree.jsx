@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-
-export default function Home() {
+export default function DOMTree() {
   return (
     <div>
       <h1>Elements Panel</h1>
       <h2>DOM Tree</h2>
 
-      <Link to="/1"><button>Next</button></Link>
+      <ol>
+        <li>Explore the DOM Tree by hotkeys.</li>
+        <li>Search by XPath or CSS selector.</li>
+        <li>Copy element styles.</li>
+        <li>Properties font meaning.</li>
+      </ol>
     </div>
   );
 }
