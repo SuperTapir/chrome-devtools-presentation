@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useNavigate, useLocation } from 'react-router-dom';
 
 import DOMTree from './views/Elements/DOMTree';
 import StylesConfig from './views/Elements/StylesConfig';
@@ -29,8 +29,9 @@ export default function App() {
     <div>
       <Routes>
         {pages.map((Page, index) => (
-          <Route key={index} path={`/${index}`} element={<Page />} />
+          <Route index={index === 0} key={index} path={`/${index}`} element={<Page />} />
         ))}
+        <Route path="*" element={<Navigate to="/0" replace />} />
       </Routes>
       <div className="space-x-1">
         {pageNum > 0 && <button onClick={prevPage}>Prev</button>}
