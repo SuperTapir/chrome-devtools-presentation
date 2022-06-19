@@ -165,3 +165,20 @@ button:hover {
 .space-x-1 > * + * {
   margin-left: 8px;
 }
+
+
+.run-animation {
+  animation: run 4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes run {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
