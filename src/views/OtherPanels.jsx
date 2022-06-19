@@ -1,4 +1,6 @@
-import run from '../assets/run.gif';
+import marioRun from '../assets/mario-run.gif';
+import sonicRun from '../assets/sonic-run.gif';
+
 
 export default function OtherPanels() {
   return (
@@ -13,7 +15,9 @@ export default function OtherPanels() {
       </ol>
 
       <div>
-        <img src={run} height="50px" alt="" className="run-animation" />
+        <img src={marioRun} height="100px" alt="" className="mario-run-animation" />
+        <br />
+        <img src={sonicRun} height="100px" alt="" className="sonic-run-animation" />
       </div>
     </div>
   );

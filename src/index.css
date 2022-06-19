@@ -166,19 +166,41 @@ button:hover {
   margin-left: 8px;
 }
 
-
-.run-animation {
-  animation: run 4s ease-in-out;
-  animation-fill-mode: forwards;
+.mario-run-animation {
+  animation: mario-run 2s ease-in-out;
+  animation-fill-mode: both;
 }
-@keyframes run {
+
+.sonic-run-animation {
+  animation: sonic-run 2s ease-in-out;
+  animation-fill-mode: both;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+@keyframes mario-run {
   0% {
     transform: translateX(0);
   }
-  30% {
-    transform: translateX(600px);
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes sonic-run {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    background: white;
+  }
+  70% {
+    transform: translateX(100px) rotate(360deg);
+    background: #223edc;
+    border-radius: 50% 50%;
+    
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(400px) rotate(3600deg);
+    background: #223edc;
+    border-radius: 50% 50%;
   }
 }
