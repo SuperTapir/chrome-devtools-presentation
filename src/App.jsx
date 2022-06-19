@@ -2,12 +2,29 @@ import { useState } from 'react';
 import { Routes, Route, Link, Navigate, useNavigate, useLocation } from 'react-router-dom';
 
 import DOMTree from './views/Elements/DOMTree';
-import StylesConfig from './views/Elements/StylesConfig';
+import DebuggingCSS from './views/Elements/DebuggingCSS';
 import Commands from './views/Commands';
-import Console from './views/Console';
-import Sources from './views/Sources';
+import InternalFunction from './views/Console/InternalFunction';
+import ConsoleAPI from './views/Console/ConsoleAPI';
+import InspectObjectProperties from './views/Console/InspectObjectProperties';
+import DebugJavaScript from './views/Sources/DebugJavaScript';
+import EditCSSAndJavaScript from './views/Sources/EditCSSAndJavaScript';
+import Network from './views/Network';
 import OtherPanels from './views/OtherPanels';
-const pages = [DOMTree, StylesConfig, Commands, Console, Sources, OtherPanels];
+import FeedBack from './views/FeedBack';
+const pages = [
+  DOMTree,
+  DebuggingCSS,
+  Commands,
+  InternalFunction,
+  ConsoleAPI,
+  InspectObjectProperties,
+  DebugJavaScript,
+  EditCSSAndJavaScript,
+  Network,
+  OtherPanels,
+  FeedBack
+];
 
 export default function App() {
   const location = useLocation();

@@ -5,7 +5,7 @@ export default function Commands() {
 
       <ol>
         <li>
-          Use <kbd>Command + Shift + P</kbd>
+          Use <code>Command + Shift + P</code>
         </li>
         <li>Screenshot</li>
         <li>Show ruler</li>

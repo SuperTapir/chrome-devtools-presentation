@@ -1,4 +1,4 @@
-export default function Sources() {
+export default function DebugJavaScript() {
   function hiMom() {
     let a = Math.random();
     debugger
@@ -9,7 +9,9 @@ export default function Sources() {
   }
   return (
     <div>
-      <h1>Sources</h1>
+      <h1>Sources Panel</h1>
+      <h2>Debug JavaScript</h2>
+      <iframe src="https://googlechrome.github.io/devtools-samples/debug-js/get-started" frameborder="0"></iframe>
       <button onClick={hiMom}>Click Me!</button>
       <ol>
         <li>Code folding.</li>
