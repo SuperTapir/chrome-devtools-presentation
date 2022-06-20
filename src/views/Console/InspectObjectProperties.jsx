@@ -4,6 +4,7 @@ export default function InspectObjectProperties() {
       this.age = age;
     }
     Cat.prototype = {
+      constructor: Cat,
       type: 'Cat',
       avatar: '🐱',
       get fullName() {

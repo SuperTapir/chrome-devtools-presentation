@@ -25,10 +25,10 @@ export default function InternalFunction() {
           Other useful functions:
           <ul>
             <li>
-              <code>copy</code>: Inspected DOM.
+              <code>copy</code>: Copies a string representation of the specified object to the clipboard.
             </li>
             <li>
-              <code>inspect</code>: Query by CSS selector.
+              <code>inspect</code>: Opens and selects the specified element or object in the appropriate panel.
             </li>
             <li>
               <code>monitor / monitorEvents</code>: Monitor functions or events.
